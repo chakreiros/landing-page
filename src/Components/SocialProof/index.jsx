@@ -21,6 +21,8 @@ import voOrlando1 from "@/assets/images/costumers/vo-orlando/vo-orlando(1).jpg";
 import voOrlando2 from "@/assets/images/costumers/vo-orlando/vo-orlando(2).jpg";
 import voOrlando3 from "@/assets/images/costumers/vo-orlando/vo-orlando(3).jpg";
 import { Separator } from "../ui/separator";
+import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
 //#endregion
 //#endregion
 export default function SocialProof() {
@@ -31,13 +33,13 @@ export default function SocialProof() {
   const voOrlandoImages = [voOrlando1, voOrlando2, voOrlando3];
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true }),
+    Autoplay({ delay: 2000, stopOnInteraction: true })
   );
   const plugin2 = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true }),
+    Autoplay({ delay: 2000, stopOnInteraction: true })
   );
 
-  const openModal = (image) => {
+  const openModal = image => {
     setSelectedImage(image);
     setIsModalOpen(true);
   };
@@ -46,7 +48,7 @@ export default function SocialProof() {
     setSelectedImage(null);
   };
   return (
-    <section>
+    <section className="justify-items-center">
       <div className="flex justify-evenly">
         <div className="text-center">
           <img
@@ -121,6 +123,14 @@ export default function SocialProof() {
         </Modal>
       </div>
       <Separator />
+      <h3 className="text-center">Navegue pelas chácaras!</h3>
+      <Button
+        asChild
+        className="w-[20rem] h-[6rem] z-10 rounded-xl text-[2rem] text-white uppercase bg-[#367f2d]
+          max-lg:text-[1.6rem] max-lg:h-fit max-lg:py-5"
+      >
+        <Link to="/spaces">Chácaras</Link>
+      </Button>
     </section>
   );
 }

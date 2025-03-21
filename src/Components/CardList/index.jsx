@@ -18,7 +18,7 @@ export default function CardList() {
       {cardData &&
         cardData.map((card, index) => (
           <Card
-            onClick={() => navigate(`/chacara/${index}`)}
+            onClick={() => navigate(`/spaces/${index}`)}
             className="w-[50vw] h-auto rounded-xl hover:cursor-pointer"
             key={index}
           >
@@ -36,7 +36,7 @@ export default function CardList() {
                           />
                         </div>
                       </CarouselItem>
-                    ),
+                    )
                   )}
                 </CarouselContent>
               </Carousel>

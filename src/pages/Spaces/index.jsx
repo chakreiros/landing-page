@@ -1,7 +1,7 @@
 import CardList from "@/Components/CardList";
 import Header from "@/Components/Header";
 
-export default function Chacaras() {
+export default function Spaces() {
   return (
     <>
       <Header />
