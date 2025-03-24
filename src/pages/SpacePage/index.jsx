@@ -27,7 +27,7 @@ export default function SpacePage() {
   const info = data.info;
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true }),
+    Autoplay({ delay: 2000, stopOnInteraction: true })
   );
 
   return (
@@ -106,9 +106,9 @@ export default function SpacePage() {
                     <a
                       className="hover:underline"
                       target="_blank"
-                      href={`https://api.whatsapp.com/send/?phone=55${info.whatsApp}`}
+                      href={`https://api.whatsapp.com/send/?phone=5519991841341&text=Chakreiros! Quero saber mais sobre a ${data.title}`}
                     >
-                      {info.whatsApp}
+                      Chamar via WhatsApp
                     </a>
                   ) : (
                     "Sem WhatsApp"
