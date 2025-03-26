@@ -14,7 +14,7 @@ export default function CardList() {
   const navigate = useNavigate();
 
   return (
-    <div className="flex gap-10">
+    <div className="flex gap-10 w-[50rem]">
       {cardData &&
         cardData.map((card, index) => (
           <Card

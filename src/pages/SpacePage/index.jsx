@@ -35,7 +35,7 @@ export default function SpacePage() {
       <div className="shadow">
         <Header />
       </div>
-      <main className="my-10">
+      <main className="m-40">
         <div className="flex gap-10 px-10 items-center">
           <img className="rounded-full w-[10rem]" src={data.logo} />
           <h1>
@@ -93,10 +93,7 @@ export default function SpacePage() {
                 {info.pet ? "Permitido animais" : "Proibido animais"}
               </li>
             </ul>
-            <div className="border-b">
-              <h3>Descrição</h3>
-              <p> {info.description}</p>
-            </div>
+
             <div>
               <h3>Contatos</h3>
               <ul>
@@ -131,12 +128,14 @@ export default function SpacePage() {
               </ul>
             </div>
           </section>
-          <section className=" m-10 p-10 w-fit max-w-[50vw]">
+          <section className=" flex flex-col gap-10 m-10 p-10 w-fit max-w-[50vw]">
             <div
-              className="w-[50vw] h-full flex items-center"
+              className="w-[50vw] h-fit flex items-center"
               dangerouslySetInnerHTML={{ __html: data.scheduler_tag }}
-            >
-              {}
+            ></div>
+            <div className="border border-gray rounded-xl p-10">
+              <h3>Descrição</h3>
+              <p> {info.description}</p>
             </div>
           </section>
         </div>
