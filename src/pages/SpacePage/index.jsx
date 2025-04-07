@@ -35,7 +35,7 @@ export default function SpacePage() {
       <div className="shadow">
         <Header />
       </div>
-      <main className="m-40">
+      <main className="m-40 max-md:m-0">
         <div className="flex gap-10 px-10 items-center">
           <img className="rounded-full w-[10rem]" src={data.logo} />
           <h1>
@@ -57,7 +57,7 @@ export default function SpacePage() {
           </CarouselContent>
         </Carousel>
 
-        <div className="flex gap-10 max-sm:flex-col">
+        <div className="flex gap-10 max-md:flex-col">
           <section className="border border-gray rounded-xl m-10 p-10 w-fit max-w-[50vw] max-md:max-w-full">
             <h2>Informações</h2>
             <ul>
@@ -128,9 +128,9 @@ export default function SpacePage() {
               </ul>
             </div>
           </section>
-          <section className=" flex flex-col gap-10 m-10 p-10 w-fit max-w-[50vw]">
+          <section className=" flex flex-col gap-10 m-10 p-10 w-fit max-w-[50vw] max-md:m-0 max-md:w-full max-md:max-w-full">
             <div
-              className="w-[50vw] h-fit flex items-center"
+              className="w-[50vw] h-fit flex items-center max-md:w-full"
               dangerouslySetInnerHTML={{ __html: data.scheduler_tag }}
             ></div>
             <div className="border border-gray rounded-xl p-10">

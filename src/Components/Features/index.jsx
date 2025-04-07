@@ -66,11 +66,11 @@ export function FeatureCard() {
   }
 
   return (
-    <div className="cards-wrapper flex gap-[2rem] items-center justify-center max-lg:flex-wrap max-lg:gap-[6rem] max-xl:p-10">
+    <div className="cards-wrapper flex max-md:flex-col gap-[2rem] items-center justify-center max-lg:flex-wrap max-lg:gap-[6rem] max-xl:p-10 max-md:p-0">
       {features.map((feature, index) => (
         <Card
           key={index}
-          className="flex flex-col items-center w-1/3 max-w-[60rem] h-[20rem] shadow-2xl hover:scale-105 ease-in-out duration-300 border-[#41693c] rounded-xl"
+          className="flex flex-col items-center w-1/3 max-w-[60rem] max-md:w-[75vw] h-[20rem] shadow-2xl hover:scale-105 ease-in-out duration-300 border-[#41693c] rounded-xl"
         >
           <CardTitle className="border border-[#41693c] relative rounded-full p-4 -top-14 bg-white">
             {React.createElement(iconComponents[feature.icon], {

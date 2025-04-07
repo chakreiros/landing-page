@@ -8,7 +8,7 @@ export default function Header() {
       <Link to="/">
         <div className="flex items-center">
           <img src={logoChakreiros} alt="Chakreiros" className="h-24" />
-          <h1 className="text-green_2 text-[3.6rem] leading-none">
+          <h1 className="text-green_2 text-[3.6rem] leading-none max-sm:hidden">
             Chakreiros
           </h1>
         </div>
