@@ -4,13 +4,15 @@ import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../ui/button";
 
 export default function Header() {
+  const navigate = useNavigate();
+
   function handleClick(id) {
+    navigate("/");
     const feature = document.getElementById(id);
     feature.scrollIntoView({ behavior: "smooth" });
   }
-  const navigate = useNavigate();
   return (
-    <header className="h-[50vh] w-[100vw] p-10 overflow-hidden shadow-2xl relative bg-banner bg-no-repeat bg-cover bg-center filter-green-banner">
+    <header className="h-[50vh] w-full p-10 overflow-hidden shadow-2xl relative bg-banner bg-no-repeat bg-cover bg-center filter-green-banner">
       <nav className="flex flex-full justify-between">
         <Link to="/">
           <div className="flex">
@@ -20,16 +22,26 @@ export default function Header() {
         </Link>
         <ul className="flex gap-4 text-[16pt] text-white font-openSansHebrew">
           <li className="flex items-center border-r-4 border-white px-4 m-0">
-            <Link to="#">HOME</Link>
+            <a href="/">HOME</a>
           </li>
           <li className="flex items-center border-r-4 border-white px-4 m-0">
-            <Link to="#">ANUNCIE</Link>
+            <span
+              className="hover:cursor-pointer"
+              onClick={() => handleClick("mc_embed_shell")}
+            >
+              ANUNCIE
+            </span>
           </li>
           <li className="flex items-center border-r-4 border-white px-4 m-0">
-            <Link to="#">CHÁCARAS</Link>
+            <Link to="/spaces">CHÁCARAS</Link>
           </li>
           <li className="flex items-center px-4 m-0">
-            <Link to="#">SOBRE</Link>
+            <span
+              className="hover:cursor-pointer"
+              onClick={() => handleClick("about")}
+            >
+              SOBRE
+            </span>
           </li>
         </ul>
       </nav>

@@ -10,10 +10,9 @@ import asideDescription from "@/assets/images/aside-description.jpg";
 //#endregion
 export default function LandingPage() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-green_5">
       <Header />
-      <Separator />
-      <main className="max-w-[153.6rem] w-full flex flex-col self-center shadow-lg">
+      <main className=" w-full flex flex-col self-center">
         <section
           id="glimpse-features"
           className="h-fit flex flex-col justify-center gap-20"
@@ -21,7 +20,7 @@ export default function LandingPage() {
           <FeatureCard />
         </section>
         <Separator />
-        <section className="p-10 gap-10 flex">
+        <section className="p-10 gap-10 flex" id="about">
           <div className="flex flex-col w-full items-center gap-24 p-10 bg-description_graphic_element bg-right-bottom bg-contain bg-no-repeat max-sm:bg-gradient-to-t from-[#367f2d] to-[#b6cd9f] max-sm:rounded-xl  max-sm:shadow-2xl">
             <h2 className="uppercase">
               Mais que lugares, <br /> experiências...
