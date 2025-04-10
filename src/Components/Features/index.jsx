@@ -27,14 +27,14 @@ const features = [
     icon: "MdAnnouncement",
     title: "Plataforma simples",
     description:
-      "Nossa plataforma foi desenvolvida para ser intuitiva e de fácil navegação, proporcionando uma experiência agradável e eficiente para os usuários. Com um design moderno e limpo, os visitantes podem encontrar rapidamente o que procuram sem complicações. As funcionalidades são dispostas de maneira lógica e acessível, garantindo que até mesmo aqueles com menos familiaridade com tecnologia possam utilizá-la sem dificuldades.",
+      "Nossa plataforma está sendo desenvolvida para ser intuitiva e de fácil navegação, proporcionar uma experiência agradável e simples.",
   },
   {
     id: "chatbot",
     icon: "PiRobotFill",
     title: "Controle de atendimento",
     description:
-      "Nosso bot de atendimento está sempre disponível para oferecer suporte e esclarecer dúvidas. Programado com inteligência artificial avançada, ele é capaz de entender e responder às perguntas mais frequentes dos usuários de maneira rápida e precisa. Além disso, ele pode direcionar os visitantes para os recursos ou informações específicos de que precisam, melhorando significativamente a experiência do usuário e reduzindo o tempo de espera por suporte humano.",
+      "Nossa equipe de atendimento está sempre disponível para oferecer suporte e esclarecer dúvidas. Respondemos às perguntas mais frequentes dos usuários de maneira rápida e precisa. Além disso, direcionamos os visitantes para os recursos ou informações específicos de que precisam, melhorando significativamente a experiência do usuário e reduzindo o tempo de espera por suporte humano e do proprietário.",
   },
   // {
   //   id: "photos",
@@ -48,7 +48,7 @@ const features = [
     icon: "AiFillSchedule",
     title: "Gestão dedicada",
     description:
-      "Simplifique a gestão de compromissos com nossa agenda automatizada. Esse recurso permite que os usuários marquem consultas, reuniões ou eventos de maneira simples e rápida, diretamente pela página. A integração com sistemas de calendário garante que todos os agendamentos sejam sincronizados automaticamente, evitando conflitos e facilitando o gerenciamento do seu tempo. A confirmação instantânea e os lembretes automáticos ajudam a reduzir ausências e atrasos, garantindo uma operação mais eficiente.",
+      "Simplifique a gestão de compromissos com sua agenda gerenciada por nós. Esse recurso permite que os usuários marquem consultas, reuniões ou eventos de maneira simples e rápida, apenas entrando em contato com os Chakreiros.",
   },
 ];
 
@@ -66,7 +66,7 @@ export function FeatureCard() {
   }
 
   return (
-    <div className="cards-wrapper flex max-md:flex-col gap-[2rem] items-center justify-center max-lg:flex-wrap max-lg:gap-[6rem] max-xl:p-10 max-md:p-0 mt-40">
+    <div className="cards-wrapper flex h-[50vh] max-md:flex-col gap-[2rem] items-center justify-center max-lg:flex-wrap max-lg:gap-[6rem] max-xl:p-10 max-md:p-0 m-40">
       {features.map((feature, index) => (
         <Card
           key={index}
@@ -103,11 +103,14 @@ export function FeatureAccordion() {
         <Accordion key={index} type="single" collapsible className="w-full">
           <AccordionItem value={`item-${index}`} id={feature.id}>
             <AccordionTrigger>
-              <p className="whitespace-nowrap w-[75vw] overflow-hidden overflow-ellipsis text-left text-[2.6rem]">
+              <h3 className="whitespace-nowrap overflow-hidden overflow-ellipsis text-left font-alata">
                 {feature.title}
-              </p>
+              </h3>
             </AccordionTrigger>
-            <AccordionContent id="AccordionContent">
+            <AccordionContent
+              className="max-w-[80vw] text-justify font-nunito text-[1.3em]"
+              id="AccordionContent"
+            >
               {feature.description}
             </AccordionContent>
           </AccordionItem>
