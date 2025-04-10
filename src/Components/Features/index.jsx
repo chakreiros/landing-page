@@ -66,11 +66,11 @@ export function FeatureCard() {
   }
 
   return (
-    <div className="cards-wrapper flex h-[50vh] max-md:flex-col gap-[2rem] items-center justify-center max-lg:flex-wrap max-lg:gap-[6rem] max-xl:p-10 max-md:p-0 m-40">
+    <div className="cards-wrapper h-[50vh] min-h-fit flex items-center justify-center gap-[4.2rem] max-lg:px-10 max-lg:gap-10 max-md:flex-col">
       {features.map((feature, index) => (
         <Card
           key={index}
-          className="flex flex-col items-center justify-evenly w-1/3 max-w-[22.4rem] max-md:w-[75vw] h-[20rem] shadow-2xl hover:scale-105 hover:cursor-pointer ease-in-out duration-300 bg-green_3 rounded-[3rem]"
+          className="flex flex-col items-center justify-evenly h-full max-h-[22.4rem] w-1/3 max-w-[22.4rem] max-md:w-full max-md:max-w-[51.2rem] shadow-2xl hover:scale-105 hover:cursor-pointer ease-in-out duration-300 bg-green_3 rounded-[3rem]"
           onClick={() => handleCardClick(feature.id)}
         >
           <CardTitle className=" p-4 -top-14">
@@ -85,7 +85,7 @@ export function FeatureCard() {
           <CardFooter>
             <Button
               variant="outline"
-              className="rounded-full uppercase text-[#41693c] font-bold text-lg"
+              className="rounded-full uppercase text-green_2 font-bold text-lg"
             >
               Saiba Mais
             </Button>
@@ -103,7 +103,7 @@ export function FeatureAccordion() {
         <Accordion key={index} type="single" collapsible className="w-full">
           <AccordionItem value={`item-${index}`} id={feature.id}>
             <AccordionTrigger>
-              <h3 className="whitespace-nowrap overflow-hidden overflow-ellipsis text-left font-alata">
+              <h3 className="whitespace-nowrap overflow-hidden overflow-ellipsis text-left  text-5xl">
                 {feature.title}
               </h3>
             </AccordionTrigger>

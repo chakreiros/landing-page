@@ -32,13 +32,13 @@ export default function SocialProof() {
   const voOrlandoImages = [voOrlando1, voOrlando2, voOrlando3];
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true }),
   );
   const plugin2 = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true }),
   );
 
-  const openModal = image => {
+  const openModal = (image) => {
     setSelectedImage(image);
     setIsModalOpen(true);
   };
@@ -124,7 +124,7 @@ export default function SocialProof() {
       <div className="flex flex-col gap-20">
         <Button
           asChild
-          className=" h-[6rem] self-center z-10 rounded-xl text-[2rem] font-nunito font-extrabold text-white uppercase bg-green_2
+          className=" h-[6rem] self-center rounded-xl text-[2rem] font-nunito font-extrabold text-white uppercase bg-green_2
           max-lg:text-[1.6rem] max-lg:h-fit max-lg:py-5 z-0"
         >
           <Link to="/spaces">Conheça todos os Chakreiros!</Link>
