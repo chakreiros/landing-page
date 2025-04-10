@@ -33,13 +33,13 @@ export default function SocialProof() {
   const voOrlandoImages = [voOrlando1, voOrlando2, voOrlando3];
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true }),
   );
   const plugin2 = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true }),
   );
 
-  const openModal = image => {
+  const openModal = (image) => {
     setSelectedImage(image);
     setIsModalOpen(true);
   };

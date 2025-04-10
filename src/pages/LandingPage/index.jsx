@@ -3,7 +3,6 @@ import { FeatureCard, FeatureAccordion } from "@/Components/Features";
 import SocialProof from "@/Components/SocialProof";
 import Form from "@/Components/Form";
 import Header from "@/Components/Header";
-import Banner from "@/Components/Banner";
 
 import { Separator } from "@/Components/ui/separator";
 
@@ -13,7 +12,6 @@ export default function LandingPage() {
   return (
     <div className="flex flex-col">
       <Header />
-      <Banner />
       <Separator />
       <main className="max-w-[153.6rem] w-full flex flex-col self-center shadow-lg">
         <section

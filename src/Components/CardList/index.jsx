@@ -36,7 +36,7 @@ export default function CardList() {
                           />
                         </div>
                       </CarouselItem>
-                    )
+                    ),
                   )}
                 </CarouselContent>
               </Carousel>

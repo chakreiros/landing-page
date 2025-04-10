@@ -1,25 +1,58 @@
-import logoChakreiros from "@/assets/images/chakreiros6.png";
-import { Link } from "react-router-dom";
+import logoImage from "@/assets/images/logo.svg";
+import logoText from "@/assets/images/chakreiros.svg";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../ui/button";
 
 export default function Header() {
+  function handleClick(id) {
+    const feature = document.getElementById(id);
+    feature.scrollIntoView({ behavior: "smooth" });
+  }
+  const navigate = useNavigate();
   return (
-    <header className="flex w-full h-fit px-10 py-5 gap-5 justify-between">
-      <Link to="/">
-        <div className="flex items-center">
-          <img src={logoChakreiros} alt="Chakreiros" className="h-24" />
-          <h1 className="text-green_2 text-[3.6rem] leading-none max-sm:hidden">
-            Chakreiros
-          </h1>
-        </div>
-      </Link>
-      <Button
-        asChild
-        className="w-[20rem] h-[6rem] z-10 rounded-xl text-[2rem] text-white uppercase bg-[#367f2d]
-          max-lg:text-[1.6rem] max-lg:h-fit max-lg:py-5"
-      >
-        <Link to="/spaces">Chácaras</Link>
-      </Button>
+    <header className="h-[50vh] w-[100vw] p-10 overflow-hidden shadow-2xl relative bg-banner bg-no-repeat bg-cover bg-center filter-green-banner">
+      <nav className="flex flex-full justify-between">
+        <Link to="/">
+          <div className="flex">
+            <img src={logoImage} alt="logo Chakreiros" className="h-24" />
+            <img src={logoText} alt="texto Chakreiros" className="h-24" />
+          </div>
+        </Link>
+        <ul className="flex gap-4 text-[16pt] text-white font-openSansHebrew">
+          <li className="flex items-center border-r-4 border-white px-4 m-0">
+            <Link to="#">HOME</Link>
+          </li>
+          <li className="flex items-center border-r-4 border-white px-4 m-0">
+            <Link to="#">ANUNCIE</Link>
+          </li>
+          <li className="flex items-center border-r-4 border-white px-4 m-0">
+            <Link to="#">CHÁCARAS</Link>
+          </li>
+          <li className="flex items-center px-4 m-0">
+            <Link to="#">SOBRE</Link>
+          </li>
+        </ul>
+      </nav>
+      <h1 className="font-alata text-[8.8rem]">
+        Com Os Chakreiros
+        <br />é Simples Assim
+      </h1>
+      <div className="flex gap-[3.7rem]">
+        <Button
+          variant="outline"
+          className="w-[29rem] h-[4.2rem] rounded-[7rem] font-nunito text-[2rem] hover:bg-transparent hover:text-white"
+          onClick={() => navigate("/register")}
+        >
+          Cadastre-se
+        </Button>
+        <Button
+          variant="outline"
+          className="w-[29rem] h-[4.2rem] rounded-[7rem] font-nunito text-[2rem] bg-transparent text-white"
+          onClick={() => handleClick("glimpse-features")}
+        >
+          Veja como funciona
+        </Button>
+      </div>
     </header>
   );
 }
