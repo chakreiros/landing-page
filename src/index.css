@@ -37,7 +37,7 @@ h6 {
 
 h1 {
   color: white;
-  font-size: 3.8rem;
+  font-size: clamp(6rem, 10vw, 8.8rem);
 }
 
 h2 {
@@ -47,7 +47,8 @@ h2 {
 
 h3 {
   color: #1d2b1b;
-  font-size: 2.8rem;
+  font-family: var(--alata);
+  font-size: 6.4rem;
 }
 
 #mc_embed_signup {
