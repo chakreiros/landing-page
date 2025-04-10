@@ -17,10 +17,10 @@ export default {
       },
       colors: {
         green_1: "#234d20",
-        green_2: "#36802d",
+        green_2: "#367f2d",
         green_3: "#77ab59",
         green_4: "#c9df8a",
-        green_5: "#f0f7da",
+        green_5: "#f1f7db ",
       },
       fontFamily: {
         abhaya: ['"Abhaya Libre"', "serif"],

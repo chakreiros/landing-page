@@ -18,14 +18,12 @@
   --green_5: #f0f7da;
 
   height: 100vh;
-
   font-size: 62.5%;
-  font-family: var(--garetHeavy);
 }
 
 body {
   font-size: 1.6rem;
-  font-family: var(--openSans);
+  font-family: var(--nunito);
 }
 
 h1,
@@ -34,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--garetHeavy);
+  font-family: var(--alata);
 }
 
 h1 {
