@@ -10,7 +10,8 @@
     "lint:prettier:check": "prettier -c .",
     "lint:prettier:fix": "prettier -w .",
     "lint:eslint:check": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "commit": "cz"
   },
   "dependencies": {
     "@hookform/resolvers": "^4.1.3",
