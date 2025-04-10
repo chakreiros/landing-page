@@ -11,7 +11,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        banner: "url('/src/assets/images/banner.png')",
+        banner: "url('/src/assets/images/imagem_2025-04-04_1610194231.svg')",
         description_graphic_element:
           "url('/src/assets/images/description-graph-element.png')",
       },
@@ -21,6 +21,15 @@ export default {
         green_3: "#77ab59",
         green_4: "#c9df8a",
         green_5: "#f0f7da",
+      },
+      fontFamily: {
+        abhaya: ['"Abhaya Libre"', "serif"],
+        alata: ["Alata", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
+        nunitoSans: ['"Nunito Sans"', "sans-serif"],
+        openSans: ['"Open Sans"', "sans-serif"],
+        openSansHebrew: ['"Open Sans Hebrew"', "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
