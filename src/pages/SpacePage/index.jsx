@@ -27,7 +27,7 @@ export default function SpacePage() {
   const info = data.info;
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true }),
   );
 
   return (

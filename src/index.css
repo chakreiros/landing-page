@@ -2,19 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "garet heavy";
-  src: url("../src/assets/fonts/Garet-Heavy.otf");
-}
-@font-face {
-  font-family: "garet book";
-  src: url("../src/assets/fonts/Garet-Book.otf");
-}
-
 :root {
-  --openSans: "open sans", sans-serif;
-  --garetHeavy: "garet heavy", sans-serif;
-  --garetBook: "garet book", sans-serif;
+  --abhaya: '"Abhaya Libre"', "serif";
+  --alata: "Alata", "sans-serif";
+  --lato: "Lato", "sans-serif";
+  --nunito: "Nunito", "sans-serif";
+  --nunitoSans: '"Nunito Sans"', "sans-serif";
+  --openSans: '"Open Sans"', "sans-serif";
+  --openSansHebrew: '"Open Sans Hebrew"', "sans-serif";
 
   --green_1: #234d20;
   --green_2: #36802d;
@@ -23,14 +18,12 @@
   --green_5: #f0f7da;
 
   height: 100vh;
-
   font-size: 62.5%;
-  font-family: var(--garetHeavy);
 }
 
 body {
   font-size: 1.6rem;
-  font-family: var(--openSans);
+  font-family: var(--nunito);
 }
 
 h1,
@@ -39,12 +32,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--garetHeavy);
+  font-family: var(--alata);
 }
 
 h1 {
-  color: var(--green_1);
-  font-size: 3.8rem;
+  color: white;
+  font-size: clamp(6rem, 10vw, 8.8rem);
 }
 
 h2 {
@@ -54,15 +47,8 @@ h2 {
 
 h3 {
   color: #1d2b1b;
-  font-size: 2.8rem;
-}
-
-li {
-  display: flex;
-  gap: 1.5rem;
-  list-style-type: circle;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #eee;
+  font-family: var(--alata);
+  font-size: 6.4rem;
 }
 
 #mc_embed_signup {

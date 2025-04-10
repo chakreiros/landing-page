@@ -25,8 +25,8 @@ export default function Form() {
           className="h-auto w-[25rem]"
         />
 
-        <p className="text-green_2 text-[2.2rem]">
-          Mais do que lugares... Experiências!
+        <p className="text-green_2 font-openSans font-extrabold text-[2rem]">
+          Com os Chakreiros é simples assim!
         </p>
 
         <div className="flex justify-around gap-10">
@@ -62,7 +62,7 @@ export default function Form() {
             noValidate=""
           >
             <div id="mc_embed_signup_scroll">
-              <h2 className="text-[#234c20]">Quero Fazer Parte!</h2>
+              <h2 className="text-[#234c20]">Eu quero Ser um Chakreiro!</h2>
             </div>
             <div className="indicates-required">
               <span className="asterisk">*</span> indicates required

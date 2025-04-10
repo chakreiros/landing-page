@@ -20,7 +20,6 @@ import voOrlandoLogo from "@/assets/images/costumers/vo-orlando/logo-vo-orlando.
 import voOrlando1 from "@/assets/images/costumers/vo-orlando/vo-orlando(1).jpg";
 import voOrlando2 from "@/assets/images/costumers/vo-orlando/vo-orlando(2).jpg";
 import voOrlando3 from "@/assets/images/costumers/vo-orlando/vo-orlando(3).jpg";
-import { Separator } from "../ui/separator";
 import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
 //#endregion
@@ -33,13 +32,13 @@ export default function SocialProof() {
   const voOrlandoImages = [voOrlando1, voOrlando2, voOrlando3];
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true }),
   );
   const plugin2 = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true }),
   );
 
-  const openModal = image => {
+  const openModal = (image) => {
     setSelectedImage(image);
     setIsModalOpen(true);
   };
@@ -48,8 +47,8 @@ export default function SocialProof() {
     setSelectedImage(null);
   };
   return (
-    <section className="justify-items-center">
-      <div className="flex justify-evenly">
+    <section className="flex flex-col justify-items-center gap-40">
+      <div className="flex justify-evenly gap-[33vw]">
         <div className="text-center">
           <img
             src={bellyLogo}
@@ -122,15 +121,15 @@ export default function SocialProof() {
           )}
         </Modal>
       </div>
-      <Separator />
-      <h3 className="text-center">Navegue pelas chácaras!</h3>
-      <Button
-        asChild
-        className="w-[20rem] h-[6rem] z-10 rounded-xl text-[2rem] text-white uppercase bg-[#367f2d]
-          max-lg:text-[1.6rem] max-lg:h-fit max-lg:py-5"
-      >
-        <Link to="/spaces">Chácaras</Link>
-      </Button>
+      <div className="flex flex-col gap-20">
+        <Button
+          asChild
+          className=" h-[6rem] self-center rounded-xl text-[2rem] font-nunito font-extrabold text-white uppercase bg-green_2
+          max-lg:text-[1.6rem] max-lg:h-fit max-lg:py-5 z-0"
+        >
+          <Link to="/spaces">Conheça todos os Chakreiros!</Link>
+        </Button>
+      </div>
     </section>
   );
 }
