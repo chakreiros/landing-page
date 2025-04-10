@@ -8,7 +8,7 @@ import belly4 from "@/assets/images/costumers/belly/IMG_4231.jpg";
 import belly5 from "@/assets/images/costumers/belly/IMG_4242.jpg";
 import belly6 from "@/assets/images/costumers/belly/IMG_4257.jpg";
 import belly7 from "@/assets/images/costumers/belly/IMG_4279.jpg";
-// import belly8 from "@/assets/images/costumers/belly/IMG_4283.jpg";
+import belly8 from "@/assets/images/costumers/belly/IMG_4283.jpg";
 import belly9 from "@/assets/images/costumers/belly/IMG_4307.jpg";
 import belly10 from "@/assets/images/costumers/belly/IMG_4318.jpg";
 import belly11 from "@/assets/images/costumers/belly/IMG_4336.jpg";
@@ -22,9 +22,9 @@ import belly18 from "@/assets/images/costumers/belly/IMG_4364.jpg";
 import belly19 from "@/assets/images/costumers/belly/IMG_4366.jpg";
 import belly20 from "@/assets/images/costumers/belly/IMG_4380.jpg";
 import belly21 from "@/assets/images/costumers/belly/IMG_4423.jpg";
-// import belly22 from "@/assets/images/costumers/belly/IMG_4436.jpg";
-// import belly23 from "@/assets/images/costumers/belly/IMG_4450.jpg";
-// import belly24 from "@/assets/images/costumers/belly/IMG_4459.jpg";
+import belly22 from "@/assets/images/costumers/belly/IMG_4436.jpg";
+import belly23 from "@/assets/images/costumers/belly/IMG_4450.jpg";
+import belly24 from "@/assets/images/costumers/belly/IMG_4459.jpg";
 // import voOrlandoLogo from "@/assets/images/costumers/vo-orlando/logo-vo-orlando.jpg";
 // import voOrlando1 from "@/assets/images/costumers/vo-orlando/vo-orlando(1).jpg";
 // import voOrlando2 from "@/assets/images/costumers/vo-orlando/vo-orlando(2).jpg";
@@ -74,7 +74,7 @@ export default [
       belly5,
       belly6,
       belly7,
-      // belly8,
+      belly8,
       belly9,
       belly10,
       belly11,
@@ -88,9 +88,9 @@ export default [
       belly19,
       belly20,
       belly21,
-      // belly22,
-      // belly23,
-      // belly24,
+      belly22,
+      belly23,
+      belly24,
     ],
     scheduler_tag:
       '<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&showTitle=0&showCalendars=0&hl=pt_BR&src=YmU4ZWNkNGU0YTI0YmFkN2E3ZTUxMTIxNTcwNmIxMjcxZTY3NDQ3ZTRkZWJiMjA2NjgwNTkyZjNhYzAzYTM2NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>',
