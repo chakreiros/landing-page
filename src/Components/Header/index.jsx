@@ -1,7 +1,7 @@
-import logoImage from "@/assets/images/logo.svg";
-import logoText from "@/assets/images/chakreiros.svg";
+import logo from "@/assets/images/Logo.svg";
 import { Link, useNavigate } from "react-router-dom";
-import { Button } from "../ui/button";
+import { Button } from "@/Components/ui/button";
+import { Separator } from "@/Components/ui/separator";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -12,12 +12,11 @@ export default function Header() {
     feature.scrollIntoView({ behavior: "smooth" });
   }
   return (
-    <header className="min-h-fit w-full p-10 overflow-hidden shadow-2xl relative bg-banner bg-no-repeat bg-cover bg-center filter-green-banner">
+    <header className="flex  flex-col min-h-fit w-full p-10 overflow-hidden shadow-2xl relative bg-banner bg-no-repeat bg-cover bg-center filter-green-banner">
       <div className="flex flex-full justify-between">
         <Link to="/">
           <div className="flex">
-            <img src={logoImage} alt="logo Chakreiros" className="h-24" />
-            <img src={logoText} alt="texto Chakreiros" className="h-24" />
+            <img src={logo} alt="texto Chakreiros" />
           </div>
         </Link>
         <nav className=" max-lg:hidden">
@@ -47,6 +46,7 @@ export default function Header() {
           </ul>
         </nav>
       </div>
+      <Separator className="w-full max-w-[128.7rem] self-center" />
       <h1 className="font-alata line-clamp-3">
         Com Os Chakreiros
         <br />é Simples Assim

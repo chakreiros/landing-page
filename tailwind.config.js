@@ -11,9 +11,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        banner: "url('/src/assets/images/imagem_2025-04-04_1610194231.svg')",
-        description_graphic_element:
-          "url('/src/assets/images/description-graph-element.png')",
+        banner: "url('/src/assets/images/banner-background.svg')",
       },
       colors: {
         green_1: "#234d20",
