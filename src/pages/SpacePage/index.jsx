@@ -28,14 +28,12 @@ export default function SpacePage() {
   const info = data.info;
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true }),
   );
 
   return (
     <>
-      <div className="shadow">
-        <Header />
-      </div>
+      <Header />
       <main className="m-40 max-md:m-0">
         <div className="flex gap-10 px-10 items-center">
           <img className="rounded-full w-[10rem]" src={data.logo} />
@@ -149,13 +147,13 @@ export default function SpacePage() {
               <p className="text-justify"> {info.description}</p>
             </div>
           </section>
-          <section className=" flex flex-col gap-10 m-10 p-10 w-fit max-w-[50vw] max-md:m-0 max-md:w-full max-md:max-w-full">
+          <section className="w-[90vw] h-[50vh] flex flex-col gap-10 p-6 m-6">
             <div
-              className="w-[50vw] h-fit flex items-center max-md:w-full"
+              className="h-fit flex items-center max-md:w-full"
               dangerouslySetInnerHTML={{ __html: data.scheduler_tag }}
             ></div>
             <div
-              className="self-center"
+              className="self-center w-full"
               dangerouslySetInnerHTML={{ __html: data.locality_tag }}
             ></div>
           </section>
