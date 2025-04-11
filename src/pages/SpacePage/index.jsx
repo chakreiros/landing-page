@@ -18,6 +18,7 @@ import { FaCheck } from "react-icons/fa";
 import { MdBlock, MdOutlinePets } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
+import { Separator } from "@/Components/ui/separator";
 //#endregion
 
 export default function SpacePage() {
@@ -27,7 +28,7 @@ export default function SpacePage() {
   const info = data.info;
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true }),
+    Autoplay({ delay: 2000, stopOnInteraction: true })
   );
 
   return (
@@ -38,7 +39,7 @@ export default function SpacePage() {
       <main className="m-40 max-md:m-0">
         <div className="flex gap-10 px-10 items-center">
           <img className="rounded-full w-[10rem]" src={data.logo} />
-          <h1>
+          <h1 className="font-alata font-bold text-green_1">
             {data.title} - {data.category}
           </h1>
         </div>
@@ -58,46 +59,60 @@ export default function SpacePage() {
         </Carousel>
 
         <div className="flex gap-10 max-md:flex-col">
-          <section className="border border-gray rounded-xl m-10 p-10 w-fit max-w-[50vw] max-md:max-w-full">
-            <h2>Informações</h2>
-            <ul>
-              <li>Área: {info.size}</li>
-              <li>{info.hosting ? <FaCheck /> : <MdBlock />}Hospedagem</li>
-              <li>Capacidade para eventos: {info.event_capacity}</li>
-              <li>
-                Localidade:
-                <a
-                  className="hover:'underline"
-                  target="_blank"
-                  href={info.locality[1]}
-                >
-                  {info.locality[0]}
-                </a>
-              </li>
-              <li>
-                {info.furniture ? <FaCheck /> : <MdBlock />}Mobília no local
-              </li>
-              <li>
-                {info.barbecue_area ? <FaCheck /> : <MdBlock />}Área de
-                churrasco
-              </li>
-              <li>{info.cooking_area ? <FaCheck /> : <MdBlock />}Cozinha</li>
-              <li>
-                {info.pool.havePool ? <FaCheck /> : <MdBlock />}Piscina -
-                {info.pool.size}
-              </li>
-              <li>{info.playground ? <FaCheck /> : <MdBlock />}Playground</li>
-              <li>{info.wifi ? <FaCheck /> : <MdBlock />}Wi-fi</li>
-              <li>
-                {info.pet ? <MdOutlinePets /> : <MdBlock />}
-                {info.pet ? "Permitido animais" : "Proibido animais"}
-              </li>
-            </ul>
-
+          <section className=" h-fit border border-gray rounded-xl m-10 p-10 w-fit max-w-[50vw] max-md:max-w-full">
+            <div>
+              <h2>Informações</h2>
+              <ul>
+                <li className="flex flex-rows items-center gap-4">
+                  Área: {info.size}
+                </li>
+                <li className="flex flex-rows items-center gap-4">
+                  {info.hosting ? <FaCheck /> : <MdBlock />}Hospedagem
+                </li>
+                <li className="flex flex-rows items-center gap-4">
+                  Capacidade para eventos: {info.event_capacity}
+                </li>
+                <li className="flex flex-rows items-center gap-4">
+                  Localidade:
+                  <a
+                    className="hover:'underline"
+                    target="_blank"
+                    href={info.locality[1]}
+                  >
+                    {info.locality[0]}
+                  </a>
+                </li>
+                <li className="flex flex-rows items-center gap-4">
+                  {info.furniture ? <FaCheck /> : <MdBlock />}Mobília no local
+                </li>
+                <li className="flex flex-rows items-center gap-4">
+                  {info.barbecue_area ? <FaCheck /> : <MdBlock />}Área de
+                  churrasco
+                </li>
+                <li className="flex flex-rows items-center gap-4">
+                  {info.cooking_area ? <FaCheck /> : <MdBlock />}Cozinha
+                </li>
+                <li className="flex flex-rows items-center gap-4">
+                  {info.pool.havePool ? <FaCheck /> : <MdBlock />}Piscina -
+                  {info.pool.size}
+                </li>
+                <li className="flex flex-rows items-center gap-4">
+                  {info.playground ? <FaCheck /> : <MdBlock />}Playground
+                </li>
+                <li className="flex flex-rows items-center gap-4">
+                  {info.wifi ? <FaCheck /> : <MdBlock />}Wi-fi
+                </li>
+                <li className="flex flex-rows items-center gap-4">
+                  {info.pet ? <MdOutlinePets /> : <MdBlock />}
+                  {info.pet ? "Permitido animais" : "Proibido animais"}
+                </li>
+              </ul>
+            </div>
+            <Separator />
             <div>
               <h3>Contatos</h3>
               <ul>
-                <li>
+                <li className="flex flex-rows items-center gap-4">
                   {info.whatsApp ? <IoLogoWhatsapp /> : <MdBlock />}
                   {info.whatsApp ? (
                     <a
@@ -111,15 +126,15 @@ export default function SpacePage() {
                     "Sem WhatsApp"
                   )}
                 </li>
-                <li>
+                <li className="flex flex-rows items-center gap-4">
                   {info.instagram ? <AiFillInstagram /> : <MdBlock />}
                   {info.instagram ? (
                     <a
                       className="hover:underline"
                       target="_blank"
-                      href={`https://www.instagram.com/${info.instagram}/`}
+                      href={`https://ig.me/m/chakreiros`}
                     >
-                      @{info.instagram}
+                      @chakreiros
                     </a>
                   ) : (
                     "Sem Instagram"
@@ -127,16 +142,22 @@ export default function SpacePage() {
                 </li>
               </ul>
             </div>
+            <Separator />
+
+            <div>
+              <h3>Descrição</h3>
+              <p className="text-justify"> {info.description}</p>
+            </div>
           </section>
           <section className=" flex flex-col gap-10 m-10 p-10 w-fit max-w-[50vw] max-md:m-0 max-md:w-full max-md:max-w-full">
             <div
               className="w-[50vw] h-fit flex items-center max-md:w-full"
               dangerouslySetInnerHTML={{ __html: data.scheduler_tag }}
             ></div>
-            <div className="border border-gray rounded-xl p-10">
-              <h3>Descrição</h3>
-              <p> {info.description}</p>
-            </div>
+            <div
+              className="self-center"
+              dangerouslySetInnerHTML={{ __html: data.locality_tag }}
+            ></div>
           </section>
         </div>
       </main>
