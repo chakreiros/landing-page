@@ -1,7 +1,6 @@
-import logoImage from "@/assets/images/logo.svg";
-import logoText from "@/assets/images/chakreiros.svg";
+import logo from "@/assets/images/Logo.svg";
 import { Link, useNavigate } from "react-router-dom";
-import { Button } from "../ui/button";
+import { Button } from "@/Components/ui/button";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -16,8 +15,7 @@ export default function Header() {
       <div className="flex flex-full justify-between">
         <Link to="/">
           <div className="flex">
-            <img src={logoImage} alt="logo Chakreiros" className="h-24" />
-            <img src={logoText} alt="texto Chakreiros" className="h-24" />
+            <img src={logo} alt="texto Chakreiros" />
           </div>
         </Link>
         <nav className=" max-lg:hidden">

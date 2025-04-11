@@ -4,7 +4,7 @@ import SocialProof from "@/Components/SocialProof";
 import Form from "@/Components/Form";
 import Header from "@/Components/Header";
 
-import asideDescription from "@/assets/images/pexels-pixabay-2742491.png";
+import asideDescription from "@/assets/images/aside-description.png";
 import comecando from "@/assets/images/comecando.svg";
 import { Separator } from "@radix-ui/react-separator";
 //#endregion
