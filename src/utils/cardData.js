@@ -43,9 +43,7 @@ export default [
       Freezer duplo, geladeira duplex" dar um jeito de inserir com outras palavras (Espaço em refrigeradores).
       A piscina cercada e segura, o parque infantil e o campo de futebol tornam-se o local completo para todas as idades. Além disso, contamos com um quarto aconchegante, banheiros com duchas quentes e estacionamento para motos. Para quem deseja personalizar ainda mais seu evento, temos parcerias com decoradores, locação de brinquedos e jogos de mesa.
       Com iluminação noturna de qualidade e ambiente pensado para momentos familiares, a Chácara Belly é um refúgio de tranquilidade e diversão. Confira as fotos desse espaço encantador e reserve agora para criar memórias inesquecíveis!
-      Estacionamento para moto.
-
-`,
+      Estacionamento para moto.`,
       locality: [
         " R. 7 JA, 847 - Jardim America, Rio Claro - SP, 13506-031",
         "https://g.co/kgs/nbXDFXk",
@@ -94,5 +92,7 @@ export default [
     ],
     scheduler_tag:
       '<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&showTitle=0&showCalendars=0&hl=pt_BR&src=YmU4ZWNkNGU0YTI0YmFkN2E3ZTUxMTIxNTcwNmIxMjcxZTY3NDQ3ZTRkZWJiMjA2NjgwNTkyZjNhYzAzYTM2NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>',
+    locality_tag:
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.3199649711264!2d-47.55429582470524!3d-22.379292179629786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7db95fbe869c1%3A0xe0638dff1ad427a4!2sChacara%20Belly!5e0!3m2!1spt-BR!2sbr!4v1744376502038!5m2!1spt-BR!2sbr"style="width:100%; height:100;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
   },
 ];

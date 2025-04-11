@@ -64,7 +64,7 @@ export default function Header() {
           className="w-[29rem] h-[4.2rem] rounded-[7rem] font-nunito text-[2rem] bg-transparent text-white"
           onClick={() => handleClick("glimpse-features")}
         >
-          Veja como funciona
+          Saiba Mais
         </Button>
       </div>
     </header>
