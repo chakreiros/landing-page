@@ -17,7 +17,7 @@ export default function Form() {
   const [phone, setPhone] = useState("");
 
   return (
-    <div className="w-full flex p-10 justify-around items-center bg-[#dbe1c8] max-lg:flex-col-reverse max-lg:gap-20">
+    <div className="w-full flex p-10 justify-around items-center bg-green_5 max-lg:flex-col-reverse max-lg:gap-20">
       <div className="flex flex-col items-center text-center gap-10">
         <img
           src={chakreirosLogo}
@@ -78,7 +78,7 @@ export default function Form() {
                 id="mce-EMAIL"
                 required=""
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={e => setEmail(e.target.value)}
               />
             </div>
             <div className="mc-field-group">
@@ -91,7 +91,7 @@ export default function Form() {
                 className=" text"
                 id="mce-FNAME"
                 value={name}
-                onChange={(e) => setName(e.target.value)}
+                onChange={e => setName(e.target.value)}
                 required
               />
             </div>
@@ -105,7 +105,7 @@ export default function Form() {
                 className="REQ_CSS"
                 id="mce-PHONE"
                 value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+                onChange={e => setPhone(e.target.value)}
                 required
               />
             </div>
