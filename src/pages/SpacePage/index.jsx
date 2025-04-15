@@ -19,22 +19,54 @@ import { MdBlock, MdOutlinePets } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
 import { Separator } from "@/Components/ui/separator";
+import Footer from "@/Components/Footer";
+import WhatsAppWidget from "@/Components/WhatsAppWidget";
 //#endregion
 
 export default function SpacePage() {
   const params = useParams();
 
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
+
   const data = cardData[params.id];
   const info = data.info;
 
-  const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true }),
-  );
+  const whatsAppLink = `https://api.whatsapp.com/send/?phone=5519991841341&text=Chakreiros! Quero saber mais sobre a ${data.title}`;
+
+  const blocks = info.description
+    .trim()
+    .split(/\n\s*\n/) // quebra por parágrafos
+    .map((block, index) => {
+      const lines = block
+        .trim()
+        .split("\n")
+        .map(line => line.trim());
+
+      const isList = lines.every(line => line.includes(":"));
+
+      if (isList) {
+        return (
+          <ul key={index} className="list-disc list-inside my-2">
+            {lines.map((line, i) => (
+              <li key={i}>{line}</li>
+            ))}
+          </ul>
+        );
+      }
+
+      return (
+        <p key={index} className="my-2">
+          {lines.join(" ")}
+        </p>
+      );
+    });
 
   return (
     <>
       <Header />
-      <main className="m-40 max-md:m-0">
+      <main className="h-fit m-40 max-sm:m-0 mb-[10rem]">
         <div className="flex gap-10 px-10 items-center">
           <img className="rounded-full w-[10rem]" src={data.logo} />
           <h1 className="font-alata font-bold text-green_1">
@@ -56,8 +88,8 @@ export default function SpacePage() {
           </CarouselContent>
         </Carousel>
 
-        <div className="flex gap-10 max-md:flex-col">
-          <section className=" h-fit border border-gray rounded-xl m-10 p-10 w-fit max-w-[50vw] max-md:max-w-full">
+        <div className="flex gap-10 max-md:flex-col mb-[10rem]">
+          <section className="border border-gray rounded-xl m-10 p-10 w-fit max-w-[50vw] max-md:max-w-full flex-wrap">
             <div>
               <h2>Informações</h2>
               <ul>
@@ -108,7 +140,7 @@ export default function SpacePage() {
             </div>
             <Separator />
             <div>
-              <h3>Contatos</h3>
+              <h2>Contatos</h2>
               <ul>
                 <li className="flex flex-rows items-center gap-4">
                   {info.whatsApp ? <IoLogoWhatsapp /> : <MdBlock />}
@@ -116,7 +148,7 @@ export default function SpacePage() {
                     <a
                       className="hover:underline"
                       target="_blank"
-                      href={`https://api.whatsapp.com/send/?phone=5519991841341&text=Chakreiros! Quero saber mais sobre a ${data.title}`}
+                      href={whatsAppLink}
                     >
                       Chamar via WhatsApp
                     </a>
@@ -143,22 +175,24 @@ export default function SpacePage() {
             <Separator />
 
             <div>
-              <h3>Descrição</h3>
-              <p className="text-justify"> {info.description}</p>
+              <h2>Descrição</h2>
+              <div className="text-justify">{blocks}</div>
             </div>
           </section>
-          <section className="w-[90vw] h-[50vh] flex flex-col gap-10 p-6 m-6">
+          <section className="w-[90vw] h-[50vh] flex flex-col gap-5 p-6 m-6">
             <div
-              className="h-fit flex items-center max-md:w-full"
-              dangerouslySetInnerHTML={{ __html: data.scheduler_tag }}
+              className="self-center w-full border border-black-1 p-10 rounded-[1rem] shadow-lg"
+              dangerouslySetInnerHTML={{ __html: data.locality_tag }}
             ></div>
             <div
-              className="self-center w-full"
-              dangerouslySetInnerHTML={{ __html: data.locality_tag }}
+              className="h-fit flex items-center max-md:w-full border border-black-1 p-10 rounded-[1rem] shadow-lg"
+              dangerouslySetInnerHTML={{ __html: data.scheduler_tag }}
             ></div>
           </section>
         </div>
+        <WhatsAppWidget whatsAppLink={whatsAppLink} />
       </main>
+      <Footer />
     </>
   );
 }

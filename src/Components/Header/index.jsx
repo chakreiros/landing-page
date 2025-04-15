@@ -1,7 +1,9 @@
+//#region requirements
 import logo from "@/assets/images/Logo.svg";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/Components/ui/button";
 import { Separator } from "@/Components/ui/separator";
+//#endregion
 
 export default function Header() {
   const navigate = useNavigate();
@@ -11,6 +13,7 @@ export default function Header() {
     const feature = document.getElementById(id);
     feature.scrollIntoView({ behavior: "smooth" });
   }
+
   return (
     <header className="flex  flex-col min-h-fit w-full p-10 overflow-hidden shadow-2xl relative bg-banner bg-no-repeat bg-cover bg-center filter-green-banner">
       <div className="flex flex-full justify-between">
