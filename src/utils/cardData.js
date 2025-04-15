@@ -121,7 +121,7 @@ export default [
       `,
 
       locality: [
-        " R. 7 JA, 847 - Jardim America, Rio Claro - SP, 13506-031",
+        " R. 9, 3399 - Alto do Santana, Rio Claro - SP, 13504-191",
         "https://g.co/kgs/nbXDFXk",
       ],
       pool: {
