@@ -97,7 +97,12 @@ export default function SpacePage() {
                   Área: {info.size}
                 </li>
                 <li className="flex flex-rows items-center gap-4">
-                  {info.hosting ? <FaCheck /> : <MdBlock />}Hospedagem
+                  {info.hosting ? (
+                    <FaCheck />
+                  ) : (
+                    <MdBlock className="text-red-500" />
+                  )}
+                  Hospedagem
                 </li>
                 <li className="flex flex-rows items-center gap-4">
                   Capacidade para eventos: {info.event_capacity}
@@ -113,27 +118,59 @@ export default function SpacePage() {
                   </a>
                 </li>
                 <li className="flex flex-rows items-center gap-4">
-                  {info.furniture ? <FaCheck /> : <MdBlock />}Mobília no local
+                  {info.furniture ? (
+                    <FaCheck />
+                  ) : (
+                    <MdBlock className="text-red-500" />
+                  )}
+                  Mobília no local
                 </li>
                 <li className="flex flex-rows items-center gap-4">
-                  {info.barbecue_area ? <FaCheck /> : <MdBlock />}Área de
-                  churrasco
+                  {info.barbecue_area ? (
+                    <FaCheck />
+                  ) : (
+                    <MdBlock className="text-red-500" />
+                  )}
+                  Área de churrasco
                 </li>
                 <li className="flex flex-rows items-center gap-4">
-                  {info.cooking_area ? <FaCheck /> : <MdBlock />}Cozinha
+                  {info.cooking_area ? (
+                    <FaCheck />
+                  ) : (
+                    <MdBlock className="text-red-500" />
+                  )}
+                  Cozinha
                 </li>
                 <li className="flex flex-rows items-center gap-4">
-                  {info.pool.havePool ? <FaCheck /> : <MdBlock />}Piscina -
-                  {info.pool.size}
+                  {info.pool.havePool ? (
+                    <FaCheck />
+                  ) : (
+                    <MdBlock className="text-red-500" />
+                  )}
+                  Piscina -{info.pool.size}
                 </li>
                 <li className="flex flex-rows items-center gap-4">
-                  {info.playground ? <FaCheck /> : <MdBlock />}Playground
+                  {info.playground ? (
+                    <FaCheck />
+                  ) : (
+                    <MdBlock className="text-red-500" />
+                  )}
+                  Playground
                 </li>
                 <li className="flex flex-rows items-center gap-4">
-                  {info.wifi ? <FaCheck /> : <MdBlock />}Wi-fi
+                  {info.wifi ? (
+                    <FaCheck />
+                  ) : (
+                    <MdBlock className="text-red-500" />
+                  )}
+                  Wi-fi
                 </li>
                 <li className="flex flex-rows items-center gap-4">
-                  {info.pet ? <MdOutlinePets /> : <MdBlock />}
+                  {info.pet ? (
+                    <MdOutlinePets />
+                  ) : (
+                    <MdBlock className="text-red-500" />
+                  )}
                   {info.pet ? "Permitido animais" : "Proibido animais"}
                 </li>
               </ul>
@@ -143,7 +180,11 @@ export default function SpacePage() {
               <h2>Contatos</h2>
               <ul>
                 <li className="flex flex-rows items-center gap-4">
-                  {info.whatsApp ? <IoLogoWhatsapp /> : <MdBlock />}
+                  {info.whatsApp ? (
+                    <IoLogoWhatsapp />
+                  ) : (
+                    <MdBlock className="text-red-500" />
+                  )}
                   {info.whatsApp ? (
                     <a
                       className="hover:underline"
@@ -157,7 +198,11 @@ export default function SpacePage() {
                   )}
                 </li>
                 <li className="flex flex-rows items-center gap-4">
-                  {info.instagram ? <AiFillInstagram /> : <MdBlock />}
+                  {info.instagram ? (
+                    <AiFillInstagram />
+                  ) : (
+                    <MdBlock className="text-red-500" />
+                  )}
                   {info.instagram ? (
                     <a
                       className="hover:underline"

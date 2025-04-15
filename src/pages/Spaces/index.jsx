@@ -6,9 +6,9 @@ export default function Spaces() {
     <>
       <Header />
       <main className="p-40">
-        <h1>Chácaras</h1>
+        <h1 className="text-green_1">Chácaras</h1>
 
-        <section className="py-20">
+        <section className="flex max-xl:justify-center py-20">
           <CardList />
         </section>
       </main>
