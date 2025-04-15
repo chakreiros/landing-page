@@ -5,6 +5,7 @@ import LandingPage from "@/pages/LandingPage";
 import Spaces from "@/pages/Spaces";
 import SpacePage from "@/pages/SpacePage";
 import NotFound from "@/pages/NotFound";
+import Register from "@/pages/Register";
 export function AppRoutes() {
   return (
     <Routes>
@@ -12,6 +13,7 @@ export function AppRoutes() {
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/spaces" element={<Spaces />} />
       <Route path="/spaces/:id" element={<SpacePage />} />
+      <Route path="/register" element={<Register />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
