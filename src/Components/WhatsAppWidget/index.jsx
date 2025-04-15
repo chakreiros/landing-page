@@ -3,8 +3,8 @@ export default function WhatsAppWidget({ whatsAppLink }) {
     <div
       id="gb-widget-5682"
       style={{
-        bottom: "14px",
-        right: "16px",
+        bottom: "5rem",
+        right: "2rem",
         boxSizing: "border-box",
         position: "fixed",
         zIndex: 16000160,
