@@ -27,7 +27,7 @@ export default function SpacePage() {
   const params = useParams();
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true }),
   );
 
   const data = cardData[params.id];
@@ -42,9 +42,9 @@ export default function SpacePage() {
       const lines = block
         .trim()
         .split("\n")
-        .map(line => line.trim());
+        .map((line) => line.trim());
 
-      const isList = lines.every(line => line.includes(":"));
+      const isList = lines.every((line) => line.includes(":"));
 
       if (isList) {
         return (

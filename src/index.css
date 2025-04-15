@@ -51,6 +51,11 @@ h3 {
   font-size: 6.4rem;
 }
 
+h4 {
+  color: rgba(29, 43, 27, 0.8);
+  font-size: 6rem;
+}
+
 #mc_embed_signup {
   width: 100%;
   min-width: 40rem;
