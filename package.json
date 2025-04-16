@@ -13,6 +13,7 @@
     "preview": "vite preview",
     "commit": "cz",
     "commit:all": "git add -A && npm run commit",
+    "commit:amend:force": "git add -A && git commit --amend --no-edit && git push -f",
     "prepare": "husky"
   },
   "dependencies": {
