@@ -52,6 +52,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       boxShadow: {
+        1: "0 -1rem 5rem rgba(0,0,0,.1)",
         custom: "0 -1rem 5rem rgba(0,0,0,.2)",
       },
     },
