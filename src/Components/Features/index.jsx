@@ -98,7 +98,7 @@ export function FeatureCard() {
 
 export function FeatureAccordion() {
   return (
-    <section id="features" className="px-20">
+    <section id="features" className="px-20 max-sm:px-6">
       {features.map((feature, index) => (
         <Accordion key={index} type="single" collapsible className="w-full">
           <AccordionItem value={`item-${index}`} id={feature.id}>

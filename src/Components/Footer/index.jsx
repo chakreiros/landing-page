@@ -11,8 +11,8 @@ export default function Footer() {
     feature.scrollIntoView({ behavior: "smooth" });
   }
   return (
-    <footer className="w-full bg-green_5 rounded-lg shadow-custom mt-4 fixed bottom-0">
-      <div className="max-sm:flex max-sm:flex-col w-full mx-auto max-w-screen-xl p-4 md:flex max-md:items-center md:justify-between">
+    <footer className="w-full bg-green_5 border">
+      <div className="w-full flex mx-auto max-w-screen-xl p-4 max-md:flex-col md:justify-between max-xl:items-center">
         <span className=" text-green_1 sm:text-center dark:text-gray-400">
           {year} - Chakreiros. All Rights Reserved
         </span>
