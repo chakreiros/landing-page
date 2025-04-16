@@ -17,7 +17,7 @@ export default function Form() {
   const [phone, setPhone] = useState("");
 
   return (
-    <div className="w-full flex p-10 justify-around items-center bg-[#dbe1c8] max-lg:flex-col-reverse max-lg:gap-20">
+    <div className="w-full flex p-10 justify-around items-center bg-green_5 max-lg:flex-col-reverse max-lg:gap-20">
       <div className="flex flex-col items-center text-center gap-10">
         <img
           src={chakreirosLogo}

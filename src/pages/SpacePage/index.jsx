@@ -27,7 +27,7 @@ export default function SpacePage() {
   const params = useParams();
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true }),
   );
 
   const data = cardData[params.id];
@@ -42,9 +42,9 @@ export default function SpacePage() {
       const lines = block
         .trim()
         .split("\n")
-        .map(line => line.trim());
+        .map((line) => line.trim());
 
-      const isList = lines.every(line => line.includes(":"));
+      const isList = lines.every((line) => line.includes(":"));
 
       if (isList) {
         return (
@@ -66,7 +66,7 @@ export default function SpacePage() {
   return (
     <>
       <Header />
-      <main className="h-fit m-40 max-sm:m-0 mb-[10rem]">
+      <main className="h-fit m-40 mb-[10rem] max-sm:m-0 max-xl:flex max-xl:flex-col max-xl:gap-5">
         <div className="flex gap-10 px-10 items-center">
           <img className="rounded-full w-[10rem]" src={data.logo} />
           <h1 className="font-alata font-bold text-green_1">
@@ -82,14 +82,14 @@ export default function SpacePage() {
           <CarouselContent>
             {data.images.map((image, index) => (
               <CarouselItem key={index} className="xl:basis-1/3">
-                <img src={image} alt={data.title} />
+                <img src={image} alt={data.title} className=" rounded-xl" />
               </CarouselItem>
             ))}
           </CarouselContent>
         </Carousel>
 
-        <div className="flex gap-10 max-md:flex-col mb-[10rem]">
-          <section className="border border-gray rounded-xl m-10 p-10 w-fit max-w-[50vw] max-md:max-w-full flex-wrap">
+        <div className="flex gap-10 mb-[10rem] max-xl:flex-col max-xl:mb-0 max-xl:gap-5">
+          <section className=" flex-wrap border border-gray rounded-xl m-10 p-10 w-fit max-w-[50vw] max-xl:max-w-full max-xl:m-0 max-xl:gap-5">
             <div>
               <h2>Informações</h2>
               <ul>
@@ -224,13 +224,13 @@ export default function SpacePage() {
               <div className="text-justify">{blocks}</div>
             </div>
           </section>
-          <section className="w-[90vw] h-[50vh] flex flex-col gap-5 p-6 m-6">
+          <section className="w-[90vw] h-[50vh] flex flex-col gap-5 p-6 m-6 max-xl:w-full max-xl:p-0 max-xl:m-0">
             <div
-              className="self-center w-full border border-black-1 p-10 rounded-[1rem] shadow-lg"
+              className="self-center w-full border border-black-1 p-10 rounded-[1rem] shadow-lg max-xl:p-5"
               dangerouslySetInnerHTML={{ __html: data.locality_tag }}
             ></div>
             <div
-              className="h-fit flex items-center max-md:w-full border border-black-1 p-10 rounded-[1rem] shadow-lg"
+              className="h-fit flex items-center max-md:w-full border border-black-1 p-10 rounded-[1rem] shadow-lg  max-xl:p-5"
               dangerouslySetInnerHTML={{ __html: data.scheduler_tag }}
             ></div>
           </section>
