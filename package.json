@@ -11,7 +11,8 @@
     "lint:prettier:fix": "prettier -w .",
     "lint:eslint:check": "eslint .",
     "preview": "vite preview",
-    "commit": "cz"
+    "commit": "cz",
+    "commit:all": "git add -A && npm run commit"
   },
   "dependencies": {
     "@hookform/resolvers": "^4.1.3",
