@@ -1,13 +1,13 @@
 //#region requirements
 import logo from "@/assets/images/Logo.svg";
 import { Link, useNavigate } from "react-router-dom";
-import { Button } from "@/Components/ui/button";
-import { Separator } from "@/Components/ui/separator";
-import { Sheet, SheetContent, SheetTrigger } from "@/Components/ui/sheet";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 //#endregion
 
-export default function Header() {
+export default function LandingPageHeader() {
   const navigate = useNavigate();
 
   function handleClick(id) {

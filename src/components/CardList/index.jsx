@@ -1,7 +1,7 @@
 //#region imports
 import { useNavigate } from "react-router-dom";
 
-import { Card, CardHeader, CardTitle, CardContent } from "@/Components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 //#region images
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 
