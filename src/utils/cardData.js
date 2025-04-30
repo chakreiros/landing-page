@@ -141,7 +141,7 @@ export default [
     logo: voOrlandoLogo,
     images: [voOrlando1, voOrlando2, voOrlando3],
     scheduler_tag:
-      '<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&showNav=0&showTitle=0&showDate=0&showTabs=0&showCalendars=0&showTz=0&src=c2NvcGluaG9AZ21haWwuY29t&color=%23E67C73" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>',
+      '<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&showTz=0&showCalendars=0&showTabs=0&src=c2NvcGluaG9AZ21haWwuY29t&color=%23E67C73" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>',
     locality_tag:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.990529015781!2d-47.57675152470479!3d-22.391714479620973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7db0e81d6c945%3A0xf347743e1cfaf48e!2zQ0jDgUNBUkEgVsOUIE9STEFORE8!5e0!3m2!1spt-BR!2sbr!4v1744409022684!5m2!1spt-BR!2sbr"style="width:100%; height:100;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
   },
