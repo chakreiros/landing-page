@@ -3,7 +3,6 @@
 
 import CallToActionSection from "@/Components/CallToActionSection";
 import { FeatureCard, FeatureAccordion } from "@/Components/Features";
-import Footer from "@/Components/Footer";
 import Form from "@/Components/Form";
 import Header from "@/Components/Header";
 import WhatsAppWidget from "@/Components/WhatsAppWidget";
@@ -70,7 +69,6 @@ export default function LandingPage() {
         </main>
         <WhatsAppWidget whatsAppLink={whatsAppLink} />
       </div>
-      <Footer />
     </>
   );
 }

@@ -19,7 +19,6 @@ import { MdBlock, MdOutlinePets } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
 import { Separator } from "@/Components/ui/separator";
-import Footer from "@/Components/Footer";
 import WhatsAppWidget from "@/Components/WhatsAppWidget";
 //#endregion
 
@@ -64,7 +63,7 @@ export default function SpacePage() {
     });
 
   return (
-    <>
+    <div>
       <Header />
       <main className="h-fit m-40 mb-[10rem] max-sm:m-0 max-xl:flex max-xl:flex-col max-xl:gap-5">
         <div className="flex gap-10 px-10 items-center">
@@ -237,7 +236,6 @@ export default function SpacePage() {
         </div>
         <WhatsAppWidget whatsAppLink={whatsAppLink} />
       </main>
-      <Footer />
-    </>
+    </div>
   );
 }

@@ -1,7 +1,6 @@
 import Form from "@/Components/Form";
 import { Link } from "react-router-dom";
 import { MoveLeft } from "lucide-react";
-import Footer from "@/Components/Footer/index";
 
 export default function Register() {
   return (
@@ -18,7 +17,6 @@ export default function Register() {
           <Form />
         </main>
       </div>
-      <Footer />
     </>
   );
 }
