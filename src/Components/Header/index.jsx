@@ -17,7 +17,7 @@ export default function Header() {
   }
 
   return (
-    <header className="flex  flex-col min-h-fit w-full p-10 overflow-hidden shadow-2xl relative bg-banner bg-no-repeat bg-cover bg-center filter-green-banner">
+    <header className="flex flex-col min-h-fit w-full p-10 overflow-hidden shadow-2xl relative bg-banner bg-no-repeat bg-cover bg-center filter-green-banner">
       <div className="flex flex-full justify-between">
         <Link to="/">
           <div className="flex">
