@@ -5,6 +5,11 @@ import React from "react";
 import { Button } from "@/Components/ui/button";
 import { Card, CardContent, CardFooter, CardTitle } from "@/Components/ui/card";
 import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/Components/ui/carousel";
+import {
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -17,22 +22,22 @@ import { MdAnnouncement } from "react-icons/md";
 import { AiFillSchedule } from "react-icons/ai";
 import { PiRobotFill } from "react-icons/pi";
 import { FaCamera } from "react-icons/fa";
-
+import { BiSolidMedal } from "react-icons/bi";
 //#endregion
 //#endregion
 
 const features = [
   {
-    id: "announcement",
+    id: "Problems",
     icon: "MdAnnouncement",
-    title: "Plataforma simples",
+    title: "Problemas",
     description:
       "Nossa plataforma está sendo desenvolvida para ser intuitiva e de fácil navegação, proporcionar uma experiência agradável e simples.",
   },
   {
     id: "chatbot",
     icon: "PiRobotFill",
-    title: "Controle de atendimento",
+    title: "Como funciona",
     description:
       "Nossa equipe de atendimento está sempre disponível para oferecer suporte e esclarecer dúvidas. Respondemos às perguntas mais frequentes dos usuários de maneira rápida e precisa. Além disso, direcionamos os visitantes para os recursos ou informações específicos de que precisam, melhorando significativamente a experiência do usuário e reduzindo o tempo de espera por suporte humano e do proprietário.",
   },
@@ -45,8 +50,8 @@ const features = [
   // },
   {
     id: "schedule-control",
-    icon: "AiFillSchedule",
-    title: "Gestão dedicada",
+    icon: "BiSolidMedal",
+    title: "Planos",
     description:
       "Simplifique a gestão de compromissos com sua agenda gerenciada por nós. Esse recurso permite que os usuários marquem consultas, reuniões ou eventos de maneira simples e rápida, apenas entrando em contato com os Chakreiros.",
   },
@@ -58,6 +63,7 @@ export function FeatureCard() {
     AiFillSchedule,
     PiRobotFill,
     FaCamera,
+    BiSolidMedal,
   };
 
   function handleCardClick(id) {
@@ -66,33 +72,37 @@ export function FeatureCard() {
   }
 
   return (
-    <div className="cards-wrapper h-[50vh] min-h-fit flex items-center justify-center gap-[4.2rem] max-lg:px-10 max-lg:gap-10 max-md:flex-col">
-      {features.map((feature, index) => (
-        <Card
-          key={index}
-          className="flex flex-col items-center justify-evenly h-full max-h-[22.4rem] w-1/3 max-w-[22.4rem] max-md:w-full max-md:max-w-[51.2rem] shadow-2xl hover:scale-105 hover:cursor-pointer ease-in-out duration-300 bg-green_3 rounded-[3rem]"
-          onClick={() => handleCardClick(feature.id)}
-        >
-          <CardTitle className=" p-4 -top-14">
-            {React.createElement(iconComponents[feature.icon], {
-              size: "3em",
-              color: "#f1f7db",
-            })}
-          </CardTitle>
-          <CardContent className="text-[1.6rem] leading-normal uppercase text-green_5 font-extrabold text-center">
-            {feature.title}
-          </CardContent>
-          <CardFooter>
-            <Button
-              variant="outline"
-              className="rounded-full uppercase text-green_2 font-bold text-lg"
+    <Carousel className="cards-wrapper max-h-[50vh] h-full flex items-center justify-center gap-[4.2rem] max-lg:px-10 max-lg:gap-10">
+      <CarouselContent>
+        {features.map((feature, index) => (
+          <CarouselItem key={index} className="basis-0/1">
+            <Card
+              key={index}
+              className="flex flex-col items-center justify-evenly h-fit w-fit p-5 hover:opacity-75 hover:cursor-pointer ease-in-out duration-300 bg-green_3 rounded-[3rem]"
+              onClick={() => handleCardClick(feature.id)}
             >
-              Saiba Mais
-            </Button>
-          </CardFooter>
-        </Card>
-      ))}
-    </div>
+              <CardTitle className=" p-4 -top-14">
+                {React.createElement(iconComponents[feature.icon], {
+                  size: "3em",
+                  color: "#f1f7db",
+                })}
+              </CardTitle>
+              <CardContent className="w-max text-[1.8rem] tracking-[.6rem] leading-normal uppercase text-green_5 font-extrabold text-center">
+                {feature.title}
+              </CardContent>
+              <CardFooter>
+                <Button
+                  variant="outline"
+                  className="rounded-[4rem] px-[4rem] py-[1.6rem] uppercase text-green_2 text-[2rem] font-nunito leading-none"
+                >
+                  Saiba Mais
+                </Button>
+              </CardFooter>
+            </Card>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+    </Carousel>
   );
 }
 

@@ -90,13 +90,14 @@ export default function Header() {
         <br />é Simples Assim
       </h1>
       <div className="flex gap-[3.7rem]">
-        <Button
-          variant="outline"
-          className="w-[29rem] h-[4.2rem] rounded-[7rem] font-nunito text-[2rem] hover:bg-transparent hover:text-white"
-          onClick={() => navigate("/register")}
-        >
-          Cadastre-se
-        </Button>
+        <a target="_blank" href="https://form.respondi.app/wHXn04J9">
+          <Button
+            variant="outline"
+            className="w-[29rem] h-[4.2rem] rounded-[7rem] font-nunito text-[2rem] hover:bg-transparent hover:text-white"
+          >
+            Cadastre-se
+          </Button>
+        </a>
         <Button
           variant="outline"
           className="w-[29rem] h-[4.2rem] rounded-[7rem] font-nunito text-[2rem] bg-transparent text-white"

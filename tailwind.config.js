@@ -19,6 +19,8 @@ export default {
         green_3: "#77ab59",
         green_4: "#c9df8a",
         green_5: "#f1f7db ",
+        green_6: "#e4e4e4 ",
+        green_7: "#548239 ",
       },
       fontFamily: {
         abhaya: ['"Abhaya Libre"', "serif"],
@@ -28,6 +30,8 @@ export default {
         nunitoSans: ['"Nunito Sans"', "sans-serif"],
         openSans: ['"Open Sans"', "sans-serif"],
         openSansHebrew: ['"Open Sans Hebrew"', "sans-serif"],
+        roboto: ['"Roboto"', "sans-serif"],
+        urbanist: ['"Urbanist"', "sans-serif"],
       },
       keyframes: {
         "accordion-down": {

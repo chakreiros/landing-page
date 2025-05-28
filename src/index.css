@@ -16,6 +16,7 @@
   --green_3: #77ab59;
   --green_4: #c9df8a;
   --green_5: #f0f7da;
+  --green_6: #e4e4e4;
 
   height: 100vh;
   font-size: 62.5%;
@@ -78,8 +79,4 @@ h4 {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-}
-
-svg {
-  color: var(--green_3);
 }
