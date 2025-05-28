@@ -6,6 +6,7 @@ import Espacos from "@/pages/Espacos";
 import SpacePage from "@/pages/SpacePage";
 import NotFound from "@/pages/NotFound";
 import Register from "@/pages/Register";
+
 export function AppRoutes() {
   return (
     <Routes>
