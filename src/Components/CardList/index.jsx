@@ -3,7 +3,11 @@ import { useNavigate } from "react-router-dom";
 
 import { Card, CardHeader, CardTitle, CardContent } from "@/Components/ui/card";
 //#region images
-import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/Components/ui/carousel";
 
 import cardData from "@/utils/cardData";
 import { FaCheck } from "react-icons/fa";
@@ -18,7 +22,7 @@ export default function CardList() {
       {cardData &&
         cardData.map((card, index) => (
           <Card
-            onClick={() => navigate(`/spaces/${index}`)}
+            onClick={() => navigate(`/espacos/${index}`)}
             className="w-full min-w-[50rem] max-w-[50vw] h-auto rounded-xl hover:scale-105 hover:cursor-pointer ease-in-out duration-150 shadow-md"
             key={index}
           >
@@ -32,7 +36,7 @@ export default function CardList() {
                           <img
                             className="max-w-1/3 max-lg:max-w-full rounded-xl"
                             src={card.images[index]}
-                            alt=""
+                            alt={`image-0${index + 1} de ${card.title}`}
                           />
                         </div>
                       </CarouselItem>

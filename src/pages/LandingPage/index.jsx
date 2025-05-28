@@ -34,7 +34,7 @@ export default function LandingPage() {
           <section className="gap-10 flex bg-green_4" id="about">
             <img
               src={asideDescription}
-              alt=""
+              alt="aside description"
               className="w-1/2 max-h-screen rounded-tr-[2rem] max-lg:hidden object-cover"
             />
             <div className="flex flex-col w-full p-10 bg-right-bottom bg-contain bg-no-repeat to-green_4 max-sm:rounded-xl">
@@ -62,7 +62,7 @@ export default function LandingPage() {
           <section className="gap-10 flex bg-green_6" id="problems">
             <img
               src={asideDescription}
-              alt=""
+              alt="aside description"
               className="w-1/2 max-h-screen rounded-tr-[2rem] max-lg:hidden object-cover"
             />
             <div className="flex flex-col w-full p-10 bg-right-bottom bg-contain bg-no-repeat bg-green_6 max-sm:rounded-xl">
@@ -86,7 +86,7 @@ export default function LandingPage() {
           <section className="gap-10 flex bg-green_6" id="soluction">
             <img
               src={asideDescription}
-              alt=""
+              alt="aside description"
               className="w-1/2 max-h-screen rounded-tr-[2rem] max-lg:hidden object-cover"
             />
             <div className="flex flex-col w-full p-10 bg-right-bottom bg-contain bg-no-repeat bg-green_4 max-sm:rounded-xl">

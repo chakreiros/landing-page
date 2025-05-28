@@ -38,7 +38,7 @@ export default function Header() {
               </span>
             </li>
             <li className="flex items-center border-r-4 border-white px-4 m-0">
-              <Link to="/spaces">CHÁCARAS</Link>
+              <Link to="/espacos">CHÁCARAS</Link>
             </li>
             <li className="flex items-center px-4 m-0">
               <span
@@ -69,7 +69,7 @@ export default function Header() {
                   </span>
                 </li>
                 <li>
-                  <Link to="/spaces">CHÁCARAS</Link>
+                  <Link to="/espacos">CHÁCARAS</Link>
                 </li>
                 <li>
                   <span

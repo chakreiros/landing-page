@@ -127,7 +127,7 @@ export default function SocialProof() {
           className=" h-[6rem] self-center rounded-xl text-[2rem] font-nunito font-extrabold text-white uppercase bg-green_2
           max-lg:text-[1.6rem] max-lg:h-fit max-lg:py-5 z-0"
         >
-          <Link to="/spaces">Conheça todos os Chakreiros!</Link>
+          <Link to="/espacos">Conheça todos os Chakreiros!</Link>
         </Button>
       </div>
     </section>
