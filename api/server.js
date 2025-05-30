@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import fs from "node:fs/promises"; // NodeJS async file system module, 'interact' static files
 import express from "express"; // Express is NodeJS library for building api
 

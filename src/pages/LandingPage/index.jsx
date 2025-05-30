@@ -17,7 +17,8 @@ import cadastreSeuEspaco from "@/assets/images/cadastre-seu-espaco.svg";
 import comunicacaoComClientes from "@/assets/images/comunicacao-com-clientes.svg";
 //#endregion
 //#endregion
-export default function LandingPage() {
+
+export const LandingPage = () => {
   const whatsAppLink =
     "https://api.whatsapp.com/send/?phone=5519991841341&text=Eu quero ser um Chakreiro!";
   return (
@@ -180,4 +181,4 @@ export default function LandingPage() {
       </div>
     </>
   );
-}
+};
