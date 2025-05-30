@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 
 import Home from "@/pages/Home";
-import LandingPage from "@/pages/LandingPage";
+import { LandingPage } from "@/pages/LandingPage";
 import Espacos from "@/pages/Espacos";
 import SpacePage from "@/pages/SpacePage";
 import NotFound from "@/pages/NotFound";
 import Register from "@/pages/Register";
 
-export function AppRoutes() {
+export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
