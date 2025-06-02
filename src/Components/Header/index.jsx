@@ -69,7 +69,7 @@ export default function Header() {
                   </span>
                 </li>
                 <li>
-                  <Link to="/espacos">CHÁCARAS</Link>
+                  <Link to="/espacos">QUERO ALUGAR!</Link>
                 </li>
                 <li>
                   <span
