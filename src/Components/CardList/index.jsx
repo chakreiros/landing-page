@@ -10,7 +10,6 @@ import {
 } from "@/Components/ui/carousel";
 
 import cardData from "@/utils/cardData";
-import { FaCheck } from "react-icons/fa";
 
 //#endregion
 //#endregion
@@ -23,7 +22,7 @@ export default function CardList() {
         cardData.map((card, index) => (
           <Card
             onClick={() => navigate(`/espacos/${index}`)}
-            className="w-full min-w-[50rem] max-w-[50vw] h-auto rounded-xl hover:scale-105 hover:cursor-pointer ease-in-out duration-150 shadow-md"
+            className="w-full min-w-[25rem] max-w-[25vw] h-auto max-h-fit rounded-xl m-auto hover:scale-105 hover:cursor-pointer ease-in-out duration-150 shadow-md"
             key={index}
           >
             <CardHeader>
@@ -61,7 +60,7 @@ export default function CardList() {
                     Área: {card.info.size}
                   </li>
                 )}
-                {card.info.hosting && (
+                {/* {card.info.hosting && (
                   <li className="flex flex-rows items-center gap-4">
                     <FaCheck /> Hospedagem | Para eventos:{" "}
                     {card.info.event_capacity}
@@ -102,7 +101,7 @@ export default function CardList() {
                     <FaCheck />
                     Wi-fi
                   </li>
-                )}
+                )} */}
               </ul>
             </CardContent>
           </Card>

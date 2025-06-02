@@ -20,6 +20,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
 import { Separator } from "@/Components/ui/separator";
 import WhatsAppWidget from "@/Components/WhatsAppWidget";
+import CallToActionSection from "@/Components/CallToActionSection";
 //#endregion
 
 export default function SpacePage() {
@@ -68,8 +69,8 @@ export default function SpacePage() {
       <main className="h-fit m-40 mb-[10rem] max-sm:m-0 max-xl:flex max-xl:flex-col max-xl:gap-5">
         <div className="flex gap-10 px-10 items-center">
           <img className="rounded-full w-[10rem]" src={data.logo} />
-          <h1 className="font-alata font-bold text-green_1">
-            {data.title} - {data.category}
+          <h1 className="font-alata font-bold text-green_1 text-[4rem]">
+            {data.title}
           </h1>
         </div>
         <Carousel
@@ -221,6 +222,16 @@ export default function SpacePage() {
             <div>
               <h2>Descrição</h2>
               <div className="text-justify">{blocks}</div>
+            </div>
+
+            <div className="flex flex-col gap-20 items-center">
+              <Separator />
+
+              <CallToActionSection
+                text="Quero conhecer a chácara!"
+                link={data.form_link}
+                external
+              />
             </div>
           </section>
           <section className="w-[90vw] h-[50vh] flex flex-col gap-5 p-6 m-6 max-xl:w-full max-xl:p-0 max-xl:m-0">

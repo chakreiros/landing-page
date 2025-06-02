@@ -15,6 +15,7 @@ import quemSomos from "@/assets/images/quemsomos.svg";
 import pagamentoAutomatico from "@/assets/images/pagamento-automatico.svg";
 import cadastreSeuEspaco from "@/assets/images/cadastre-seu-espaco.svg";
 import comunicacaoComClientes from "@/assets/images/comunicacao-com-clientes.svg";
+import CallToActionSection from "@/Components/CallToActionSection";
 //#endregion
 //#endregion
 export default function LandingPage() {
@@ -24,7 +25,13 @@ export default function LandingPage() {
     <>
       <div className="flex flex-col max-sm:gap-10 bg-green_5">
         <Header />
+
         <main className="w-full flex flex-col gap-[4.6rem] bg-green_6">
+          <CallToActionSection
+            text="ENCONTRE UMA CHÁCARA PARA MIM!"
+            link="/espacos"
+            className="mt-[4.6rem]"
+          />
           <section
             id="glimpse-features"
             className="h-full max-h-[50vh] mt-[4.6rem]"

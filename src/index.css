@@ -42,8 +42,10 @@ h1 {
 }
 
 h2 {
-  color: #1d2b1b;
+  color: var(--green_2);
   font-size: 3.8rem;
+  font-weight: bold;
+  text-shadow: var(--text-shadow-md);
 }
 
 h3 {
