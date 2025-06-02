@@ -1,5 +1,5 @@
 import { SitemapStream, streamToPromise } from "sitemap";
-import { createWriteStream, writeFileSync } from "fs";
+import { writeFileSync } from "fs";
 
 (async () => {
   const sitemap = new SitemapStream({

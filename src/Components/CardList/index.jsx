@@ -10,7 +10,6 @@ import {
 } from "@/Components/ui/carousel";
 
 import cardData from "@/utils/cardData";
-import { FaCheck } from "react-icons/fa";
 
 //#endregion
 //#endregion
