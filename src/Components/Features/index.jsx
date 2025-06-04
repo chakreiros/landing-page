@@ -28,32 +28,18 @@ import { BiSolidMedal } from "react-icons/bi";
 
 const features = [
   {
-    id: "Problems",
+    id: "problems",
     icon: "MdAnnouncement",
     title: "Problemas",
     description:
       "Nossa plataforma está sendo desenvolvida para ser intuitiva e de fácil navegação, proporcionar uma experiência agradável e simples.",
   },
   {
-    id: "chatbot",
+    id: "solution",
     icon: "PiRobotFill",
     title: "Como funciona",
     description:
       "Nossa equipe de atendimento está sempre disponível para oferecer suporte e esclarecer dúvidas. Respondemos às perguntas mais frequentes dos usuários de maneira rápida e precisa. Além disso, direcionamos os visitantes para os recursos ou informações específicos de que precisam, melhorando significativamente a experiência do usuário e reduzindo o tempo de espera por suporte humano e do proprietário.",
-  },
-  // {
-  //   id: "photos",
-  //   icon: "FaCamera",
-  //   title: "Fotos e vídeos profissionais",
-  //   description:
-  //     "A qualidade visual do seu conteúdo faz toda a diferença. Por isso, nossa landing page conta com fotos e vídeos profissionais que destacam o melhor do seu produto ou serviço. Cada imagem e vídeo é escolhido e produzido com cuidado, garantindo uma apresentação elegante e atraente. Isso não só melhora a estética do seu site, mas também ajuda a transmitir a credibilidade e o profissionalismo da sua marca.",
-  // },
-  {
-    id: "schedule-control",
-    icon: "BiSolidMedal",
-    title: "Planos",
-    description:
-      "Simplifique a gestão de compromissos com sua agenda gerenciada por nós. Esse recurso permite que os usuários marquem consultas, reuniões ou eventos de maneira simples e rápida, apenas entrando em contato com os Chakreiros.",
   },
 ];
 
@@ -72,7 +58,7 @@ export function FeatureCard() {
   }
 
   return (
-    <Carousel className="cards-wrapper max-h-[50vh] h-full flex items-center justify-center gap-[4.2rem] max-lg:px-10 max-lg:gap-10">
+    <Carousel className="cards-wrapper max-h-[50vh] h-full flex items-center justify-center gap-[4.2rem] max-lg:gap-10">
       <CarouselContent>
         {features.map((feature, index) => (
           <CarouselItem key={index} className="basis-0/1">

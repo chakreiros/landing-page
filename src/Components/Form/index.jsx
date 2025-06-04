@@ -26,7 +26,7 @@ export default function Form() {
         />
 
         <p className="text-green_2 font-openSans font-extrabold text-[2rem]">
-          Com os Chakreiros é simples assim!
+          Deixa com os Chakreiros!
         </p>
 
         <div className="flex justify-around gap-10">

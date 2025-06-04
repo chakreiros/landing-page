@@ -5,8 +5,8 @@ import { Separator } from "@/Components/ui/separator";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center gap-[2rem] p-[1rem] bg-[#DDE2D0]">
-      <div className=" flex items-center justify-center gap-[1.8rem]">
+    <footer className="flex flex-col items-center justify-between py-[2rem] bg-[#DDE2D0]">
+      <div className="flex gap-[1.8rem]">
         <a target="blank" href="https://instagram.com/chakreiros">
           <Instagram size={46} />
         </a>
@@ -23,9 +23,11 @@ export default function Footer() {
           <FaFacebook size={46} />
         </a>
       </div>
+
       <Separator className="bg-black" />
+
       <div>
-        <p className="font-openSans text-[2rem]">
+        <p className="font-openSans text-[2rem] text-center">
           © 2025 Chakreiros, Inc. Privacidade
         </p>
       </div>

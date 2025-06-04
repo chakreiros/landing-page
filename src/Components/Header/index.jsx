@@ -85,22 +85,23 @@ export default function Header() {
         </div>
       </div>
       <Separator className="w-full max-w-[128.7rem] self-center" />
-      <h1 className="font-alata line-clamp-3">
-        Com Os Chakreiros
-        <br />é Simples Assim
-      </h1>
-      <div className="flex gap-[3.7rem]">
-        <a target="_blank" href="https://form.respondi.app/wHXn04J9">
+      <h1 className="font-alata line-clamp-6">Deixa com os Chakreiros!</h1>
+      <div className="flex md:max-w-[25vw] gap-[3.7rem] max-sm:flex-col max-sm:m-auto">
+        <a
+          className="w-full"
+          target="_blank"
+          href="https://form.respondi.app/wHXn04J9"
+        >
           <Button
             variant="outline"
-            className="w-[29rem] h-[4.2rem] rounded-[7rem] font-nunito text-[2rem] hover:bg-transparent hover:text-white"
+            className="w-max md:max-w-fit h-[4.2rem] rounded-[7rem] font-nunito text-[2rem] hover:bg-transparent hover:text-white"
           >
-            Cadastre-se
+            Cadastre seu espaço
           </Button>
         </a>
         <Button
           variant="outline"
-          className="w-[29rem] h-[4.2rem] rounded-[7rem] font-nunito text-[2rem] bg-transparent text-white"
+          className="w-full min-w-fit max-w-[29rem] h-[4.2rem] rounded-[7rem] font-nunito text-[2rem] bg-transparent text-white"
           onClick={() => handleClick("glimpse-features")}
         >
           Saiba Mais
